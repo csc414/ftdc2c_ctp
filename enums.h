@@ -132,6 +132,14 @@ enum class EnumOnRspEvent
 	OnRspQryCombPromotionParam,
 	OnRspQryRiskSettleInvstPosition,
 	OnRspQryRiskSettleProductStatus,
+	OnRspQrySPBMFutureParameter,
+	OnRspQrySPBMOptionParameter,
+	OnRspQrySPBMIntraParameter,
+	OnRspQrySPBMInterParameter,
+	OnRspQrySPBMPortfDefinition,
+	OnRspQrySPBMInvestorPortfDef,
+	OnRspQryInvestorPortfMarginRatio,
+	OnRspQryInvestorProdSPBMDetail
 };
 
 /// <summary>

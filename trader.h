@@ -422,4 +422,44 @@ public:
 		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQryRiskSettleProductStatus, pRiskSettleProductStatus, pRspInfo, nRequestID, bIsLast);
 	};
 
+	///SPBM期货合约参数查询响应
+	void OnRspQrySPBMFutureParameter(CThostFtdcSPBMFutureParameterField* pSPBMFutureParameter, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQrySPBMFutureParameter, pSPBMFutureParameter, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///SPBM期权合约参数查询响应
+	void OnRspQrySPBMOptionParameter(CThostFtdcSPBMOptionParameterField* pSPBMOptionParameter, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQrySPBMOptionParameter, pSPBMOptionParameter, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///SPBM品种内对锁仓折扣参数查询响应
+	void OnRspQrySPBMIntraParameter(CThostFtdcSPBMIntraParameterField* pSPBMIntraParameter, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQrySPBMIntraParameter, pSPBMIntraParameter, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///SPBM跨品种抵扣参数查询响应
+	void OnRspQrySPBMInterParameter(CThostFtdcSPBMInterParameterField* pSPBMInterParameter, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQrySPBMInterParameter, pSPBMInterParameter, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///SPBM组合保证金套餐查询响应
+	void OnRspQrySPBMPortfDefinition(CThostFtdcSPBMPortfDefinitionField* pSPBMPortfDefinition, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQrySPBMPortfDefinition, pSPBMPortfDefinition, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///投资者SPBM套餐选择查询响应
+	void OnRspQrySPBMInvestorPortfDef(CThostFtdcSPBMInvestorPortfDefField* pSPBMInvestorPortfDef, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQrySPBMInvestorPortfDef, pSPBMInvestorPortfDef, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///投资者新型组合保证金系数查询响应
+	void OnRspQryInvestorPortfMarginRatio(CThostFtdcInvestorPortfMarginRatioField* pInvestorPortfMarginRatio, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQryInvestorPortfMarginRatio, pInvestorPortfMarginRatio, pRspInfo, nRequestID, bIsLast);
+	};
+
+	///投资者产品SPBM明细查询响应
+	void OnRspQryInvestorProdSPBMDetail(CThostFtdcInvestorProdSPBMDetailField* pInvestorProdSPBMDetail, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast)override {
+		mOnRspEvent(pObject, EnumOnRspEvent::OnRspQryInvestorProdSPBMDetail, pInvestorProdSPBMDetail, pRspInfo, nRequestID, bIsLast);
+	};
+
 }; // end of class

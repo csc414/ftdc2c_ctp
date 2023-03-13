@@ -496,3 +496,34 @@ FTDC2C_API int MYDECL TdReqQryRiskSettleProductStatus(void* pApi, const CThostFt
 	return (static_cast<Trader*>(pApi))->RawApi->ReqQryRiskSettleProductStatus((CThostFtdcQryRiskSettleProductStatusField*)pQryRiskSettleProductStatus, nRequestID);
 }
 
+FTDC2C_API int MYDECL TdReqQrySPBMFutureParameter(void* pApi, const CThostFtdcQrySPBMFutureParameterField* pQrySPBMFutureParameter, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQrySPBMFutureParameter((CThostFtdcQrySPBMFutureParameterField*)pQrySPBMFutureParameter, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQrySPBMOptionParameter(void* pApi, const CThostFtdcQrySPBMOptionParameterField* pQrySPBMOptionParameter, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQrySPBMOptionParameter((CThostFtdcQrySPBMOptionParameterField*)pQrySPBMOptionParameter, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQrySPBMIntraParameter(void* pApi, const CThostFtdcQrySPBMIntraParameterField* pQrySPBMIntraParameter, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQrySPBMIntraParameter((CThostFtdcQrySPBMIntraParameterField*)pQrySPBMIntraParameter, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQrySPBMInterParameter(void* pApi, const CThostFtdcQrySPBMInterParameterField* pQrySPBMInterParameter, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQrySPBMInterParameter((CThostFtdcQrySPBMInterParameterField*)pQrySPBMInterParameter, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQrySPBMPortfDefinition(void* pApi, const CThostFtdcQrySPBMPortfDefinitionField* pQrySPBMPortfDefinition, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQrySPBMPortfDefinition((CThostFtdcQrySPBMPortfDefinitionField*)pQrySPBMPortfDefinition, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQrySPBMInvestorPortfDef(void* pApi, const CThostFtdcQrySPBMInvestorPortfDefField* pQrySPBMInvestorPortfDef, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQrySPBMInvestorPortfDef((CThostFtdcQrySPBMInvestorPortfDefField*)pQrySPBMInvestorPortfDef, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQryInvestorPortfMarginRatio(void* pApi, const CThostFtdcQryInvestorPortfMarginRatioField* pQryInvestorPortfMarginRatio, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQryInvestorPortfMarginRatio((CThostFtdcQryInvestorPortfMarginRatioField*)pQryInvestorPortfMarginRatio, nRequestID);
+}
+
+FTDC2C_API int MYDECL TdReqQryInvestorProdSPBMDetail(void* pApi, const CThostFtdcQryInvestorProdSPBMDetailField* pQryInvestorProdSPBMDetail, int nRequestID) {
+	return (static_cast<Trader*>(pApi))->RawApi->ReqQryInvestorProdSPBMDetail((CThostFtdcQryInvestorProdSPBMDetailField*)pQryInvestorProdSPBMDetail, nRequestID);
+}
